@@ -1,9 +1,23 @@
-var
-    name = document.querySelector("#exampleInputName");
-    gender = document.querySelectorAll("#form-user-create [name=gender]:checked");
-    birth = document.querySelector("#exampleInputBirth");
-    country = document.querySelector("#exampleInputCountry");
-    email = document.querySelector("#exampleInputEmail");
-    password = document.querySelector("#exampleInputPassword");
-    photo = document.querySelector("#exampleInputFile");
-    adm = document.querySelector("#exampleInputAdmin");
+
+var fields = document.querySelectorAll("#form-user-create [name]");
+var user = {};
+
+
+fields.forEach(function(field,  index) {
+
+    if (field.name == "gender"){
+
+        if (field.checked){
+            user[field.name] = field.value;
+        }
+            
+
+    } else {
+        
+        user[field.name] = field.value;
+
+    }
+        
+});
+
+console.log(user);
