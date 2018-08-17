@@ -40,12 +40,12 @@ document.getElementById("form-user-create").addEventListener("submit", function 
 
     });
 
-    var objectUser = new User(user.name, 
-        user.gender, 
-        user.birth, 
+    var objectUser = new User(user.name,
+        user.gender,
+        user.birth,
         user.country,
-        user.email, 
-        user.password, 
+        user.email,
+        user.password,
         user.photo,
         user.admin);
 
