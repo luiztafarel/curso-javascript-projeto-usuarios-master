@@ -4,10 +4,10 @@ var user = {};
 
 function addLine(dataUser) {
 
-  var tr = document.createElement("tr");
-  var td = document.createElement("td");
+    var tr = document.createElement("tr");
+    var td = document.createElement("td");
 
-  tr.innerHTML = `
+    tr.innerHTML = `
     <tr>
         <td> <img src="dist/img/user1-128x128.jpg" alt="User Image" class="img-circle img-sm"></td>
         <td>${dataUser.name}</td>
