@@ -68,8 +68,6 @@ class User {
 
             }
 
-            this[name] = json[name];
-
         }
 
     }
